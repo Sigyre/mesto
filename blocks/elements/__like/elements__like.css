@@ -1,0 +1,22 @@
+.elements__like {
+    background-image: url(../../../images/like_white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease-in;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    width: 22px;
+    height: 19px;
+  }
+
+  .elements__like:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .elements__like:active {
+    background-image: url(../../../images/like_black.svg);
+    opacity: 1;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Место Россия</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="Логотип Место Россия" />
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__info">
+          <img
+            class="profile__avatar"
+            src="./images/Avatar.png"
+            alt="Фотография профиля"
+          />
+          <div class="profile__text">
+            <div class="profile__line">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button
+                type="button"
+                class="profile__edit-button"
+                aria-label="Редактировать"
+              ></button>
+            </div>
+
+            <p class="profile__profession">Исследователь океана</p>
+          </div>
+        </div>
+        <div class="profile__add-button">
+          <img class="profile__button-pic" src="./images/plus.png" alt="Плюс" />
+        </div>
+      </section>
+      <section class="elements">
+        <div class="elements__card">
+          <img class="elements__foto" src="./images/Dombai.png" alt="Домбай" />
+          <div class="elements__group">
+            <h2 class="elements__title">Домбай</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+        <div class="elements__card">
+          <img class="elements__foto" src="./images/Elbrus.png" alt="Эльбрус" />
+          <div class="elements__group">
+            <h2 class="elements__title">Эльбрус</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+        <div class="elements__card">
+          <img
+            class="elements__foto"
+            src="./images/Karachaevo.png"
+            alt="Карачаево"
+          />
+          <div class="elements__group">
+            <h2 class="elements__title">Карачаево</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+        <div class="elements__card">
+          <img class="elements__foto" src="./images/Dombai.png" alt="Домбай" />
+          <div class="elements__group">
+            <h2 class="elements__title">Домбай</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+        <div class="elements__card">
+          <img class="elements__foto" src="./images/Elbrus.png" alt="Эльбрус" />
+          <div class="elements__group">
+            <h2 class="elements__title">Эльбрус</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+        <div class="elements__card">
+          <img
+            class="elements__foto"
+            src="./images/Karachaevo.png"
+            alt="Карачаево-Черкесия"
+          />
+          <div class="elements__group">
+            <h2 class="elements__title">Карачаево-Черкесия</h2>
+            <button
+              class="elements__like"
+              type="button"
+              aria-label="Лайк"
+            ></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">© 2022 Mesto Russia</p>
+    </footer>
+    <section class="popup">
+      <div class="popup__container">
+        <p class="popup__title">Редактировать профиль</p>
+        <form class="popup__form">
+          <input class="popup__name popup__input" type="text" name="name" />
+
+          <input
+            class="popup__profession popup__input"
+            type="text"
+            name="profession"
+          />
+
+          <button
+            class="popup__save"
+            type="submit"
+            aria-label="Кнопка сохранить"
+          >
+            Сохранить
+          </button>
+        </form>
+        <button
+          class="popup__close"
+          type="button"
+          aria-label="Кнопка закрыть"
+        ></button>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

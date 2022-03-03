@@ -1,0 +1,14 @@
+.profile__text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: 670px) {
+    .profile__text {
+      padding: 26px 0 0;
+
+    }
+  }
