@@ -12,6 +12,7 @@
   text-align: center;
   margin-top: 48px;
   border-radius: 2px;
+  padding: 0;
 }
 
 .popup__save:hover {
