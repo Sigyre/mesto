@@ -24,10 +24,8 @@
   .popup__save {
     width: 238px;
     height: 46px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
+    
   }
 }

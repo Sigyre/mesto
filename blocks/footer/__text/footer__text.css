@@ -9,8 +9,6 @@
 
 @media screen and (max-width: 670px) {
   .footer__text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
   }

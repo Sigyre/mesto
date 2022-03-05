@@ -1,4 +1,24 @@
 .profile__line {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 810px) {
+  .profile__line {
+    max-width: 300px;
   }
+}
+
+@media screen and (max-width: 690px) {
+  .profile__line {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__line {
+    max-width: 250px;
+    margin: 0 38px 0 65px;
+  }
+}
