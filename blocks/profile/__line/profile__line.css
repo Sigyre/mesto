@@ -1,18 +1,13 @@
 .profile__line {
   display: flex;
-  align-items: center;
+  align-items: end;
   max-width: 450px;
 }
 
 @media screen and (max-width: 810px) {
   .profile__line {
     max-width: 300px;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .profile__line {
-    max-width: 300px;
+    align-items: center;
   }
 }
 
