@@ -9,6 +9,7 @@
   background-color: transparent;
   width: 22px;
   height: 19px;
+ 
 }
 
 .elements__like:hover {
@@ -16,7 +17,4 @@
   cursor: pointer;
 }
 
-.elements__like:active {
-  background-image: url(../../../images/like_black.svg);
-  opacity: 1;
-}
+
