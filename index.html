@@ -8,11 +8,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <img 
-        class="logo" 
-        src="./images/logo.svg" 
-        alt="Логотип Место Россия" 
-      />
+      <img class="logo" src="./images/logo.svg" alt="Логотип Место Россия" />
     </header>
     <main class="content">
       <section class="profile">
@@ -35,19 +31,11 @@
             <p class="profile__profession">Исследователь океана</p>
           </div>
         </div>
-        <button 
-          class="profile__add-button" 
-          type="button">
-          <img 
-            class="profile__button-pic" 
-            src="./images/plus.svg" 
-            alt="Плюс" 
-          />
+        <button class="profile__add-button" type="button">
+          <img class="profile__button-pic" src="./images/plus.svg" alt="Плюс" />
         </button>
       </section>
-      <section class="elements">
-       
-      </section>
+      <section class="elements"></section>
     </main>
     <footer class="footer">
       <p class="footer__text">© 2022 Mesto Russia</p>
@@ -57,16 +45,18 @@
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" name="profileName">
-          <input 
-            class="popup__input_type_name popup__input" 
-            type="text" 
-            name="Имя" 
+          <input
+            class="popup__input_type_name popup__input"
+            type="text"
+            name="Имя"
+            placeholder="Введите имя"
           />
 
           <input
             class="popup__input_type_profession popup__input"
             type="text"
             name="Профессия"
+            placeholder="Введите профессию"
           />
 
           <button
@@ -84,21 +74,23 @@
         ></button>
       </div>
     </div>
-<!-- Папап добавление новой карточки -->
+    <!-- Папап добавление новой карточки -->
     <div class="popup popup_add-card">
       <div class="popup__container">
         <h2 class="popup__title">Новое место</h2>
         <form class="popup__form-card" name="nameCard">
-          <input 
-            class="popup__input_name_card popup__input" 
-            type="text" 
-            name="Название" 
+          <input
+            class="popup__input_name_card popup__input"
+            type="text"
+            name="Название"
+            placeholder="Введите название места"
           />
 
           <input
             class="popup__input_link_foto popup__input"
             type="text"
             name="Ссылка на фото"
+            placeholder="Введите ссылку на картинку"
           />
 
           <button
@@ -117,25 +109,26 @@
       </div>
     </div>
     <!-- Попап карточки в большом размере -->
-<div class="popup popup_picture">
-<figure class="popup__figure">
-  <img class="popup__image" src="#" alt="#">
-  <figcaption class="popup__caption"></figcaption>
-  <button type="button" class="popup__close popup__close-pic"></button>
-</figure> 
-</div>
-    
+    <div class="popup popup_picture">
+      <figure class="popup__figure">
+        <img class="popup__image" src="#" alt="#" />
+        <figcaption class="popup__caption"></figcaption>
+        <button
+          class="popup__close popup__close-pic"
+          type="button"
+          aria-label="Кнопка закрыть"
+          ></button>
+      </figure>
+    </div>
+
     <template id="cards__template">
       <div class="elements__card">
-        <img 
-          class="elements__foto" 
-          src="#" 
-          alt="#" 
-        />
-        <button class="elements__trash"
+        <img class="elements__foto" src="#" alt="#" />
+        <button
+          class="elements__trash"
           type="button"
-        aria-label="Удалить">
-      </button>
+          aria-label="Удалить"
+        ></button>
 
         <div class="elements__group">
           <h2 class="elements__title"></h2>
