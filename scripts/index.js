@@ -30,7 +30,7 @@ const initialCards = [
 //попап профиля
 const editProfile = document.querySelector('.profile__edit-button'); //кнопка редактирования профиля
 const closePopupProfile = document.querySelector('.popup__close-profile'); //кнопка закрытия (крестик)
-const profilePopup = document.querySelector('.popup__add-profile'); // попап профиля
+const profilePopup = document.querySelector('.popup_add-profile'); // попап профиля
 const autorName = document.querySelector('.profile__name'); //Имя в профиле
 const autorProfession = document.querySelector('.profile__profession'); // профессия в профиле
 const popupAutorName = profilePopup.querySelector('.popup__input_type_name'); //введенное имя
@@ -39,13 +39,13 @@ const formElement = document.querySelector('.popup__form'); // форма вво
 
 //попап добавления карточки
 const addCard = document.querySelector('.profile__add-button');//кнопка добавления карточки
-const cardPopup = document.querySelector('.popup__add-card');//попад добавление карточки
+const cardPopup = document.querySelector('.popup_add-card');//попад добавление карточки
 const closePopupCard = document.querySelector('.popup__close-card'); // кнопка закрытия (крестик)
-const formCardAdd = document.querySelector('.popup__form_card');
+const formCardAdd = document.querySelector('.popup__form-card');
 const placeName = formCardAdd.querySelector('.popup__input_name_card');
 const placeLink = formCardAdd.querySelector('.popup__input_link_foto');
 const cardsBox = document.querySelector('.elements');
-const openPopupPicture = document.querySelector('.popup__picture'); //открывание попапа fullsize 
+const openPopupPicture = document.querySelector('.popup_picture'); //открывание попапа fullsize 
 const pictureFoto = openPopupPicture.querySelector('.popup__image'); 
 const pictureCaption = openPopupPicture.querySelector('.popup__caption');
 const closePopupPic = openPopupPicture.querySelector('.popup__close-pic')

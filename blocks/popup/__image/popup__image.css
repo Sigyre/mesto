@@ -2,7 +2,3 @@
     object-fit: contain;
     overflow: hidden;
 }
-
-.popup__image :hover {
-    cursor: pointer;
-}
