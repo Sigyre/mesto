@@ -50,6 +50,7 @@ const pictureFoto = openPopupPicture.querySelector('.popup__image');
 const pictureCaption = openPopupPicture.querySelector('.popup__caption');
 const closePopupPic = openPopupPicture.querySelector('.popup__close-pic')
 
+
 // F открытия закрытия
 function openPopup(elem) { 
   elem.classList.add('popup_open');
@@ -58,6 +59,24 @@ function openPopup(elem) {
 function closePopup (elem) { 
   elem.classList.remove('popup_open');
 };
+
+//
+//закрытие через ESC
+
+document.addEventListener ('keydown', function (evt) {
+  if(evt.key === "Escape") {
+    closePopup(document.querySelector(".popup_open"));
+    formCardAdd.reset();
+  }
+});
+// закрытие при клике на оверлей
+
+document.addEventListener ('click', function (evt) {
+if (evt.target === evt.target.closest('.popup')){
+  closePopup(evt.target.closest('.popup'));
+}
+})
+
 
 //Профиль
 // F открываем попап, подтягиваем данные
@@ -100,7 +119,7 @@ function createCards(card) {
     pictureFoto.src = card.link;
   });
   
-return cardsElement;
+  return cardsElement;
 };
 
 function renderCard (card) {
@@ -114,8 +133,12 @@ function formSubmitHandlerCard (evt) { //добавление новой кар�
   newCard.name = placeName.value;
   newCard.link = placeLink.value;
   renderCard(newCard);
+  
+  placeName.value = "";
+  placeLink.value = "";
+
   closePopup(cardPopup);
-  formCardAdd.reset();
+  
   };
 
 initialCards.forEach(card=>{createCards(card);}); //добавление всех карточек
