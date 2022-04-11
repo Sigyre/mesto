@@ -71,18 +71,11 @@ function closeByEsc(evt) {
   if (evt.key === "Escape") {
     const openedPopup = document.querySelector('.popup_open');
     closePopup(openedPopup); 
-    formCardAdd.reset();
   }
 }  
 
 
 // закрытие при клике на оверлей
-
-//document.addEventListener ('click', function (evt) {
-//if (evt.target === evt.target.closest('.popup')){
-//  closePopup(evt.target.closest('.popup'));
-//}
-//})
 
 function closeByOverlay (popup) {
   popup.addEventListener('click', (evt) => {
@@ -156,13 +149,11 @@ function formSubmitHandlerCard (evt) { //добавление новой кар�
   newCard.link = placeLink.value;
   renderCard(newCard);
   
-  //placeName.value = "";
-  //placeLink.value = "";
-
   closePopup(cardPopup);
   
   formCardAdd.reset();
   formCardAdd.querySelector(".popup__save").classList.add('popup__save_disabled');
+  formCardAdd.querySelector(".popup__save").setAttribute("disabled", "disabled");
   };
 
 initialCards.forEach(card=>{createCards(card);}); //добавление всех карточек
@@ -172,7 +163,11 @@ setEventListnerCloseByOverlay(popupList);
 profileEdit.addEventListener('click', openProfilPopup); // слушаем клик по кнопке редактирования профиля и делаем папап видимым
 popupProfileClose.addEventListener('click', function () {closePopup(profilePopup)}); // слушаем кнопку крестик, закрытия редактирования профиля, делаем папап невидимым
 
-cardAdd.addEventListener('click', function () { openPopup(cardPopup)});// открываем попап по кнопке
+cardAdd.addEventListener('click', function () { 
+  formCardAdd.reset();
+  openPopup(cardPopup);
+});// открываем попап по кнопке
+
 popupCardClose.addEventListener('click', function () { closePopup(cardPopup)});//закрываем по крестику
 
 popupPicClose.addEventListener('click', function () {closePopup(popupPictureOpen)});// закрываем папап с большой картинкой
